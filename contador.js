@@ -7,16 +7,9 @@ botones.forEach(boton => {
     boton.addEventListener ('click', function(e) {
         const estilos = e.currentTarget.classList;
 
-        if(estilos.contains('disminuir')) {
-            contador--;
-        }
 
-        else if(estilos.contains('aumentar')) {
+        if(estilos.contains('aumentar')) {
             contador++;
-        }
-
-        else{
-            contador = 0;
         }
 
         valor.textContent = contador;
