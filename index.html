@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingertec Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <h1>Ingertec Challenge</h1>
+    
+    <main>
+        <section class="images">
+          <div class="impar"> <button onclick="popUp()"><img src="https://picsum.photos/200" alt=""></button><p>Descripcion</p> <p><i class="bi bi-eye"></i></i></p> <button onclick="loadText()" class="btn-primary btn-cargar-texto">Cargar Texto</button> <textarea  class="json-text" name="Json" cols="30" rows="8"></textarea> </div>
+          <div class="par"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  <img src="https://picsum.photos/200" alt=""></button> <p>Descripcion</p> <p><i class="bi bi-eye"></i></i></p> <button onclick="loadText()" class="btn-primary btn-cargar-texto" >Cargar Texto</button> <textarea  class="json-text" name="Json" id="" cols="30" rows="8"></textarea> </div>
+  <div class="impar"> <button onclick="popUp()"><img src="https://picsum.photos/200" alt=""></button><p>Descripcion</p> <p><i class="bi bi-eye"></i></i></p> <button class="btn-primary btn-cargar-texto">Cargar Texto</button> <textarea  class="json-text" name="Json" id="" cols="30" rows="8"></textarea> </div>
+  <div class="par"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  <img src="https://picsum.photos/200" alt=""></button> <p>Descripcion</p> <p><i class="bi bi-eye"></i></i></p> <button class="btn-primary btn-cargar-texto">Cargar Texto</button> <textarea  class="json-text" name="Json" id="" cols="30" rows="8"></textarea> </div>
+  <div class="impar"> <button onclick="popUp()"><img src="https://picsum.photos/200" alt=""></button><p>Descripcion</p> <p><i class="bi bi-eye"></i></i></p> <button class="btn-primary btn-cargar-texto">Cargar Texto</button> <textarea class="json-text" name="Json" id="" cols="30" rows="8"></textarea> </div>
+</section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal Impar</h5>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/800/400" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<span id="valor"> 0 </span>
+<button class="boton disminuir">disminuir</button>
+<button class="boton resetear">resetear</button>
+<button class="boton aumentar">aumentar</button>
+
+
+
+<script>
+function popUp() {
+  var myWindow = window.open("prueba.html", "", "width=800,height=400");
+}
+</script>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="cargar-texto.js"></script>
+    <script src="contador.js"></script>
+
+
+</body>
+</html>

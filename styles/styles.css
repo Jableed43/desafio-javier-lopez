@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+
+section.images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.impar, div.par{
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.par button{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+button.btn.btn-primary{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none;
+}
+
+
+.btn-cargar-texto{
+    width: 80% !important;
+    margin-bottom: 0;
+}
+
+
+div.modal-body img{
+width: 100%;
+}
+
+.prueba button{
+    margin-bottom: 10px;
+    width: 48%;
+}
+
+/* .container-popup{
+} */
+
+.img-popup {
+    width: 100%;
+    height: 100vh;
+}
+
+/* .button-popup{
+
+} */
+
+.botonera-popup{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
