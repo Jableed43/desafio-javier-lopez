@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body{
     background-image: url(../img/background.jpg);
 }
@@ -10,18 +11,26 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    margin: 7px;
+    margin: 10px 0;
     text-align: center;
+    font-family: 'Quintessential', cursive;
+    font-size:  65px;
 }
 
 .img-container{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo-img{
     width: 100%;
     margin: 10px 0px;
+}
+
+.challenge-png{
+    width: 25%;
 }
 
 section.images {
@@ -32,13 +41,22 @@ section.images {
 
 
 div.impar, div.par{
-    border: solid black 1px;
+    border: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 90%;
+}
 
+div.impar p, div.par p{
+    margin-top: 10px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        font-size: 22px;
+}
+
+.btn-impar , .btn-par{
+    background: none ;
 }
 
 
@@ -46,10 +64,13 @@ div.par button, div.impar button{
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
+    border: none;
 }
 
 div.impar img, div.par img{
-    width: 100% ;
+    width: 100%;
+    border-radius: 20px;
+    background: none;
 }
 
 button.btn.btn-primary{
@@ -100,6 +121,45 @@ width: 100%;
     justify-content: center;
 }
 
+/* box effect */
+
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
 @media (min-width: 768px){
 
     section.images{
@@ -114,8 +174,8 @@ width: 100%;
     }
 
     .logo-img {
-        width: 40%;
-         }
+        width: 30%;
+             }
 
 
 }
