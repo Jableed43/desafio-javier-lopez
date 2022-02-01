@@ -30,7 +30,7 @@ CREATE TABLE `tresource` (
   PRIMARY KEY (`idResource`),
   KEY `idResourceType_idx` (`idResourceType`),
   CONSTRAINT `idResourceType` FOREIGN KEY (`idResourceType`) REFERENCES `tresource_type` (`idResourceType`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `tresource` (
 
 LOCK TABLES `tresource` WRITE;
 /*!40000 ALTER TABLE `tresource` DISABLE KEYS */;
-INSERT INTO `tresource` VALUES (1,'2022-01-31 00:21:24','Introducción a GO',1),(2,'2022-01-31 00:22:22','El mundo de node.js',2),(3,'2022-01-31 00:22:58','Ejercicios de react',4),(4,'2022-01-31 00:23:59','POO con java',2),(5,'2022-01-31 00:24:46','Los inicios de Amazon',1),(6,'2022-01-31 00:25:22','Seguridad informatica',2),(7,'2022-01-31 00:40:53','Manual de css',3);
+INSERT INTO `tresource` VALUES (1,'2022-02-01 14:58:39','Introducción a GO',1),(2,'2022-02-01 14:58:39','El mundo de node.js',2),(3,'2022-02-01 14:58:40','Ejercicios de react',4),(4,'2022-02-01 14:58:40','POO con java',2),(5,'2022-02-01 14:58:40','Los inicios de Amazon',1),(6,'2022-02-01 14:58:40','Seguridad informatica',2),(7,'2022-02-01 14:58:40','Introducción a c++',3);
 /*!40000 ALTER TABLE `tresource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +55,7 @@ CREATE TABLE `tresource_type` (
   `created` datetime DEFAULT NULL,
   `descrip` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`idResourceType`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `tresource_type` (
 
 LOCK TABLES `tresource_type` WRITE;
 /*!40000 ALTER TABLE `tresource_type` DISABLE KEYS */;
-INSERT INTO `tresource_type` VALUES (1,'2022-01-31 00:17:16','Video'),(2,'2022-01-31 00:17:55','PDF Documentación'),(3,'2022-01-31 00:18:12','PDF Enunciado'),(4,'2022-01-31 00:18:23','PDF Solución');
+INSERT INTO `tresource_type` VALUES (1,'2022-02-01 14:58:31','Video'),(2,'2022-02-01 14:58:31','PDF Documentación'),(3,'2022-02-01 14:58:32','PDF Enunciado'),(4,'2022-02-01 14:58:32','PDF Solución');
 /*!40000 ALTER TABLE `tresource_type` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -77,4 +77,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-31  0:58:24
+-- Dump completed on 2022-02-01 15:10:57
