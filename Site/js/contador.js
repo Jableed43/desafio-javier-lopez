@@ -1,3 +1,4 @@
+
 // Contadores inicializados
 let contador2 = 0;
 let contador4 = 0;

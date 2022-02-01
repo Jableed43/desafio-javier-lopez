@@ -1,3 +1,5 @@
+localStorage.setItem("contador1", 0);
+localStorage.getItem("contador1")
 
 
 let contador1 = 0;
