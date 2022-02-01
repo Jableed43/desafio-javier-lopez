@@ -84,6 +84,10 @@ div.par p:hover{
     transform: scale(1.02);
 }
 
+.p-titulo{
+    font-weight: bold;
+}
+
 
 p.eye{
     margin-bottom: 10px !important;
