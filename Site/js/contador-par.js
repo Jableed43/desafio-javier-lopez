@@ -21,7 +21,7 @@ const valor4 = document.querySelector("#valor-4");
             contador2++;
         }
 
-        valor2.textContent = contador2;
+        valor2.innerHTML = contador2;
     })
 
 // Función de contador 4
@@ -33,5 +33,5 @@ const valor4 = document.querySelector("#valor-4");
             contador4++;
         }
 
-        valor4.textContent = contador4;
+        valor4.innerHTML = contador4;
     })
