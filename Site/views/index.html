@@ -31,38 +31,40 @@
 
       <!-- Sección de imágenes -->
         <section class="images">
-
+          <!-- Imágen N°1 -->
           <div class="impar"> <button class="btn-impar" onclick="openpopUp()"><div class="container"> <img src="../img/tacos.jpg" class="image"> <div class="middle"> <div class="text">Impar</div> </div> </div>  </button> <p class="p-titulo">Una comida</p> <p>Tacos mexicanos. Realmente deliciosos, me gusta cocinarlos de principio a fin y comerlos con gente que amo.</p> <p class="eye"><i class="bi bi-eye"></i><span id="showVisited"> 0 </span></p> </div>
           
           <div class="divBorder"></div>
-          
+          <!-- Imágen N°2 -->
           <div class="par"> <button type="button" class="btn-par btn boton-2 aumentar-2" data-toggle="modal" data-target="#exampleModal"> <div class="container"> <img src="../img/bici.jpg" class="image"> <div class="middle"> <div class="text">Par</div> </div> </div></button> <p class="p-titulo">Una actividad física</p> <p>Andar en bici, la actividad física que más disfruto, me ayuda a liberar stress además es muy buena la sensación, es como volar.</p> <p class="eye"><i class="bi bi-eye"></i><span id="valor-2"> 0 </span> </p> </div>
           
           <div class="divBorder"></div>
-          
+          <!-- Imágen N°3 -->
           <div class="impar"> <button class="btn-impar" onclick="openpopUpN3()"><div class="container"> <img src="../img/wos.jpg" class="image"> <div class="middle"> <div class="text">Impar</div> </div> </div></button> <p class="p-titulo">Un artista </p> <p>Wos, uno de los artistas nacionales contemporaneos que más disfruto, tiene letras con un excelente mensaje y buena musica.</p> <p class="eye"><i class="bi bi-eye"></i><span id="showVisitedN3"> 0 </span></p> </div>
           
           <div class="divBorder"></div>
-          
+          <!-- Imágen N°4 -->
           <div class="par"> <button type="button" class="btn-par btn boton-4 aumentar-4" data-toggle="modal" data-target="#exampleModal2"> <div class="container"> <img src="../img/matrix.jpg" class="image"> <div class="middle"> <div class="text">Par</div> </div> </div> </button><p class="p-titulo">Una película</p> <p>Matrix ha impulsado mi amor por la tecnología, tiene buena historia y un mensaje que te deja pensando. Sin dudas una obra maestra.</p> <p class="eye"><i class="bi bi-eye"></i><span id="valor-4"> 0 </span> </p> </div>
           
           <div class="divBorder"></div>
-          
+          <!-- Imágen N°5 -->
           <div class="impar"> <button class="btn-impar" onclick="openpopUpN5()">  <div class="container"> <img src="../img/villa-angostura.jpg" class="image"> <div class="middle"> <div class="text">Impar</div> </div> </div>  </button> <p class="p-titulo">Un viaje</p>  <p>Me enamoré a primera vista de Villa La Angostura, tengo muchas ganas de visitar sus paisajes, recorrer y respirar el aire fresco que ofrece. </p> <p class="eye"><i class="bi bi-eye"></i><span id="showVisitedN5"> 0 </span></p> </div>
         
           
         </section>
-
+        <!-- Borde mobile -->
         <div class="divBorder"></div>
 
+        <!-- Caja AJAX-JSON -->
         <div class="cargar-json"> 
         <button onclick="loadText1()" class="btn-success btn-cargar-texto btn-1">Cargar Texto</button> <textarea  class="json-text txt-1" name="Json" cols="17" rows="5"></textarea> 
       </div>
     
     
 
+      <!-- Modales -->
 
-      <!-- Modal 2 -->
+      <!-- Modal Imágen 2 -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -79,7 +81,7 @@
         </div>
       </div>
 
-      <!-- Modal 4 -->
+      <!-- Modal Imágen 4 -->
       <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -105,5 +107,6 @@
       <script src="../js/cargar-texto.js"></script>
       <script src="../js/contador-par.js"></script>
       <script src="../js/contador-impar-popUp.js"></script>
+      
 </body>
 </html>

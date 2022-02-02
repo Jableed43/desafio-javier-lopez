@@ -7,12 +7,12 @@ let contador4 = 0;
 const boton2 = document.querySelector('.boton-2');
 const boton4 = document.querySelector('.boton-4');
 
-// Contador numerico in page
+// Contador numérico in page
 const valor2 = document.querySelector("#valor-2");
 const valor4 = document.querySelector("#valor-4");
 
 
-// Función de contador 2
+// Función de contador imágen 2
     boton2.addEventListener ('click', function(e) {
         const estilos = e.currentTarget.classList;
 
@@ -24,7 +24,7 @@ const valor4 = document.querySelector("#valor-4");
         valor2.innerHTML = contador2;
     })
 
-// Función de contador 4
+// Función de contador imágen 4
     boton4.addEventListener ('click', function(e) {
         const estilos = e.currentTarget.classList;
 
