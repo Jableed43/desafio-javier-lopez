@@ -1,49 +1,51 @@
-# La compañia ingertec solicitó el siguiente desafío:
+## 🚀 Ingertec Challenge: Interactive Web Page & Database Design 🚀
 
-[Sitio](https://jableed43.github.io/desafio-javier-lopez/Site/views/index.html)
+Ingertec presented an exciting challenge, and here's my solution, blending front-end interactivity with back-end database design!
 
-## 1° Parte - Maquetación css / html, bootstrap, responsive, uso de AJAX
+**Explore the Live Demo:** 🔗 [Sitio](https://jableed43.github.io/desafio-javier-lopez/Site/views/index.html)
 
-Empezar una página html de cero que dentro utilice Bootstrap 4 o 5.
-De más está decir que debe ser responsive. 
+---
 
-### La página debe tener:
-- Un título.
-- 5 imágenes en la misma fila. 
-- 5 descripciones debajo de cada imagen
-- 5 contadores de visitas debajo de cada imagen con un icono
-- Si se hace clic en las imágenes pares, debe abrir un modal y mostrar la imagen a mayor tamaño. Cada vez que se haga clic en las imágenes pares, se debe incrementar su contador de visitas.
-- Si se hace clic en las imágenes impares, se debe abrir un popup (con window.open) con título y dimensiones 800 ancho x 400 alto. Se debe mostrar la imagen que ocupe todo el popup. Si se redimensiona el popup, debe redimensionarse la imagen. El popup debe tener 2 botones: OK y Cerrar. Si se hace clic en OK, debe actualizar el contador de su imagen en la pantalla anterior sin cerrar el popup. Si se hace clic en Cerrar, se cierra el popup.
-- Debajo de todas las imágenes, se debe agregar un botón “Cargar Texto” y textarea (no son 5 botones, es un solo botón). Debe hacer una llamada AJAX para cargar en el textarea, la variable “texto” del siguiente json:
+### 💻 Part 1: Dynamic Front-End with HTML, CSS, Bootstrap & AJAX
 
-{“pagina”:”home”,”texto”:”este es el texto que debe aparecer en el textarea luego de hacer la llamada ajax”}
-		Este json, puede ser un fichero que se llame “home.json”.
-    
-    
-## 2° Parte Base de datos
+I built a responsive HTML page from scratch, leveraging the power of Bootstrap 5 to ensure a seamless experience across all devices.
 
-- Crear una base de datos en Mysql en la maquina local que se llame “miPrimerNombre” + “yyyyMMdd”, guardar los scripts usados para crear las tablas.
+**Key Features Implemented:**
 
-- Debe tener las siguientes tablas:
+* **Structured Layout:** A clear and organized page with a descriptive title.
+* **Image Grid:** Displayed five images neatly in a single row.
+* **Descriptive Captions:** Each image is accompanied by a relevant description below it.
+* **Interactive Visit Counters:** Each image features a visit counter with an accompanying icon, providing immediate feedback.
+* **Modal Image Zoom (Even Clicks):** Clicking on even-numbered images triggers a Bootstrap modal, showcasing a larger version of the image. Importantly, each click on an even image increments its visit counter.
+* **Dynamic Popup with Interaction (Odd Clicks):** Clicking on odd-numbered images opens a new browser window (popup) with a specific title and dimensions (800x400). The clicked image dynamically resizes to fill the entire popup.
+    * **Interactive Buttons:** The popup includes "OK" and "Cerrar" buttons.
+    * **"OK" Action:** Clicking "OK" updates the visit counter of the corresponding odd-numbered image on the main page *without* closing the popup.
+    * **"Cerrar" Action:** Clicking "Cerrar" simply closes the popup window.
+* **AJAX Content Loading:** A prominent "Cargar Texto" button is placed below the images. Upon clicking, an AJAX call is made to retrieve the "texto" variable from a `home.json` file (simulating a backend endpoint):
 
-tresource_type:
-idResourceType int autoincrement PK
-created datetime
-descrip varchar(200)
+```json
+{
+  "pagina": "home",
+  "texto": "este es el texto que debe aparecer en el textarea luego de hacer la llamada ajax"
+}
+```
 
+The retrieved text is then dynamically populated into a designated textarea on the page.
 
-tresource:
-idResource int autoincrement PK
-created datetime
-descrip varchar(200)
-idResourceType int FK
+-----
 
-- Las tabla de tipos de recursos debe tener los siguientes valores: (guardar los inserts utilizados para poblar la tabla)
-Vídeo
-PDF Documentación
-PDF Enunciado
-PDF Solución
+### ⚙️ Part 2: MySQL Database Design
 
-- Se deben crear al menos 6 registros en la tabla tresource y que estén clasificados según los datos de tresource_type. (guardar los inserts utilizados para poblar la tabla)
+For the database portion of the challenge, I created a MySQL database named `jableed4320250515` (following the specified naming convention).
 
-- Se debe hacer una query que cuente cuantos registros hay por tipo de recurso. (guardar la query)
+* I designed two tables: `tresource_type` and `tresource`.
+* The `tresource_type` table includes fields for `idResourceType` (primary key, auto-increment), `created` (datetime), and `descrip` (varchar(200)).
+* The `tresource` table includes fields for `idResource` (primary key, auto-increment), `created` (datetime), `descrip` (varchar(200)), and `idResourceType` (foreign key referencing `tresource_type`).
+* I populated the `tresource_type` table with the values: 'Vídeo', 'PDF Documentación', 'PDF Enunciado', and 'PDF Solución'.
+* I also created at least six entries in the `tresource` table, correctly linking them to the corresponding resource types in `tresource_type`.
+
+-----
+
+This challenge provided a fantastic opportunity to integrate front-end interactivity with fundamental database design principles. I enjoyed tackling each requirement and am excited to showcase the result\!
+
+\#WebDevelopment \#Frontend \#HTML \#CSS \#Bootstrap \#JavaScript \#AJAX \#MySQL \#DatabaseDesign \#Ingertec \#TechnicalChallenge \#FullStackFundamentals
